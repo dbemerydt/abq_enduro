@@ -1,1 +1,1 @@
-web: python resultsCalculator --port=$PORT
+web: python resultsCalculator.py --port=$PORT
