@@ -4,6 +4,9 @@ from pywebio import config
 from pywebio import STATIC_PATH
 from pywebio import start_server
 import argparse
+import numpy as np
+import pandas as pd
+
 
 def main():
 
@@ -11,8 +14,7 @@ def main():
     # config(css_style="#input-container{margin: 0 auto;max-width: 1000px;padding: 0 10px;width: 100%; }")
 
 
-    import numpy as np
-    import pandas as pd
+
 
     put_markdown("### Example input (start and finish columns must be named using the *same format*.)")
     example_input = pd.read_csv('example_input.csv')
