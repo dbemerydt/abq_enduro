@@ -30,8 +30,8 @@ def main():
     num_stages = len([c for c in list(raw_results) if "start" in c])
     df = raw_results.copy()
     for i in range(1,num_stages+1):
-        df['stage_'+str(i)+'_start'] = pd.to_datetime(df['stage_'+str(i)+'_start'],format='%M:%S')
-        df['stage_'+str(i)+'_finish'] = pd.to_datetime(df['stage_'+str(i)+'_finish'],format='%M:%S')
+        df['stage_'+str(i)+'_start'] = pd.to_datetime(df['stage_'+str(i)+'_start'],format='%H:%M:%S')
+        df['stage_'+str(i)+'_finish'] = pd.to_datetime(df['stage_'+str(i)+'_finish'],format='%H:%M:%S')
         df['stage_'+str(i)+'_time'] = df['stage_'+str(i)+'_finish'] - df['stage_'+str(i)+'_start']
         df['stage_'+str(i)+'_rank'] = df['stage_'+str(i)+'_time'].rank(ascending=True)
 
