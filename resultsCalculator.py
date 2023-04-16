@@ -10,7 +10,7 @@ import pandas as pd
 
 def main():
 
-    config(css_style="#output-container{margin: 0 auto;max-width: 980px;padding: 0 10px;width: 100%; }")
+    config(css_style="#output-container{margin: 0 auto;max-width: 1400px;padding: 0 10px;width: 100%; }")
     # config(css_style="#input-container{margin: 0 auto;max-width: 1000px;padding: 0 10px;width: 100%; }")
 
 
