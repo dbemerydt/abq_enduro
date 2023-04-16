@@ -16,11 +16,12 @@ def main():
 
 
 
-    put_markdown("### Example input (start and finish columns must be named using the *same format*.)")
+    put_markdown("### Example input (start and finish columns must be named and the times must be input using the *same format*.)")
     example_input = pd.read_csv('example_input.csv')
     put_html(example_input.to_html(index=False,border=0))
     put_markdown("## Full results:")
     csv_file = file_upload('Upload yer dang time data (as a .csv and not any format or so help me I WILL BREAK)')
+    put_markdown("If this produces a white screen with no results, it is likely the result of the format example not being followed. Reload the page and double check the formatting, or call Ben.")
 
     open(csv_file['filename'],'wb').write(csv_file['content'])
 
